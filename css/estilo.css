@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@import "reset.css";
+@import "cores.css";
+
+@font-face {
+    font-family: Barbie;
+    src: url(fonts/Barbie.otf);
+}
+
+body{
+    color: var(--pale-sky);
+    font-family: Barbie;
+    background-color: var(--dusty-rose);
+    
+}
