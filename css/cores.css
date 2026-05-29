@@ -1,6 +1,6 @@
 :root{
-    --pale-sky: #c7e8f3ff;
+    --pale-sky: rgb(255, 255, 255);
     --steel-blue: #3f7cacff;
     --mauve-shadow: #553a41ff;
-    --dusty-rose: #c98686ff;
+    --dusty-rose: rgb(30, 53, 42);
 }

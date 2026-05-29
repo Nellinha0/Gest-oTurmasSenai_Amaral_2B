@@ -10,6 +10,47 @@
 body{
     color: var(--pale-sky);
     font-family: Barbie;
+    font-size: small;
     background-color: var(--dusty-rose);
-    
+    padding: 20px;
+
+
+}
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+h2 {
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 97, 67);
+  text-align: center;
+}
+.tituloPrincipal {
+    text-align: center;
+}
+.img-banner {
+    margin-left: 0%;
+}
+header {
+    background-color: rgb(35, 66, 57);
+
+}
+menu {
+}
+#turmas .sala {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+#turmas footer {
+    background-color: beige;
+}
+#turmas footer h3 {
+    font-size: smaller;
+}
+#turmas  .sala.turma_A {
+    background-color: aqua;
+    color: antiquewhite;
+}
+#turmas .sala.turma_B {
+    background-color: azure;
 }

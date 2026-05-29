@@ -15,32 +15,118 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">noticias</a></li>
+                <li><a href="#LellisA">Lellis Ito - Turma A</a></li>
+                <li><a href="#LellisB">Lellis Ito - Turma B</a></li>
+                <li><a href="#AmaralA">AMARAL - Turma A </a></li>
+                <li><a href="#AmaralB">AMARAL - Turma B </a></li>
             </ul>
         </nav>
     </header>
+
     <div>
         <picture>
             <source media="(max-width:650px)" srcset="img/white.jpg">
             <source media="(max-width:465px)" srcset="img/white.jpg">
-            <img src="img/white.jpg"alt="banner">
+            <img class="img-mancha" src="img/mancha.png" alt="parmera">
 
         </picture>
     </div>
-    <section class="senai mk">
-        <h1>SENAI MAIRINQUE</h1>
-        <div class="turmas">
-            <section class="sala turma amaral">
-                <h2>TURMA - AMARAL - 2A</h2>
-                <ul>
-                <li>Samantha</li>
-            <li>...</li>
-            <li>Antonella</li>
-        </ul>
+    <section headingoffset="1">
+        <section>
+            <h1>TURMAS DE
+                <mark><abbr title="DESENVOLVIMENTO DE SISTEMAS">DEV</abbr></mark>
+                NO SENAI - MK 
+            </h1>
+            <section>
+                <header><h2>LELLIS - ITO - A</h2></header>
+                <div>
+                    <ul class="lista-alunos lellis" id="alunoslellisitoa">
+                        <li>Isabella</li>
+                        <li>Levi</li>
+                        <li>Maisa</li>
+                        <li>Max</li>
+                    </ul>
+                </div>
+                <footer>
+                    <div>Quantidade de alunos: 
+                        <p id="qtdAlunoslellisitoa"><mark>0</mark></p>
+                    </div>
+                </footer>
+            </section>
+
+            <hr>
+            <section>
+                <header><h2>LELLIS - ITO - B </h2></header>
+                <div>
+                    <ul class="lista-alunos lellisito" id="alunoslellisitob">
+                        <li>Carlos Eduardo</li>
+                        <li>José</li>
+                        <li>Adrian</li>
+                        <li>Luiz</li>
+                    </ul>
+                </div>
+                <footer>
+                    <div>Quantidade de alunos: 
+                        <p id="qtdAlunoslellisitob"><mark>0</mark></p>
+                    </div>
+                </footer>
+            </section>
+
+            <hr>
+            <section>
+                <header><h2>AMARAL - A </h2></header>
+                <div>
+                    <ul class="lista-alunos amaral" id="alunosAmarala">
+                        <li>Giovana</li>
+                        <li>Alanys</li>
+                        <li>Gabriel</li>
+                        <li>Rafael</li>
+                    </ul>
+                </div>
+                <footer>
+                    <div>Quantidade de alunos: 
+                        <p id="qtdAlunosAmarala"><mark>0</mark></p>
+                    </div>
+                </footer>
+            </section>
+            <hr>
+            <section>
+                <header><h2>AMARAL - B </h2></header>
+                <div>
+                    <ul class="lista-alunos amaral" id="alunosAmaralB">
+                        <li>Samantha</li>
+                        <li>Alessandra</li>
+                        <li>Kevin</li>
+                        <li>Lucas</li>
+                    </ul>
+                </div>
+                <footer>
+                    <div>Quantidade de alunos: 
+                        <p id="qtdAlunosAmaralB">10</p>
+                    </div>
+                </footer>
+            </section>            
+            <img src="img/verde.png"alt="banner">      b cvc b
+        </section>      
     </section>
-    <h1>SAMANTHA ANTONELLA</h1>
-    <h2>SOMOS TOPS</h2>
+
+    <footer>
+        <h3>Desenvolvido por: <mark><b>Samantha Antonella</b></mark></h3>
+    </footer>
+
+    <script>
+        function contarQuantidadeAlunosTurma(lista, qtd) {
+            const listaAlunos = document.getElementById(lista);
+            const Quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = quantidade;
+        }
+        contarQuantidadeAlunosTurma('alunosLellis_A', 'qtdAlunosLellis_A');
+        contarQuantidadeAlunosTurma('alunosLellis_B', 'qtdAlunosLellis_B');
+    
+        contarQuantidadeAlunosTurma('alunosAmaral_A', 'qtdAlunosAmaral_A');
+        contarQuantidadeAlunosTurma('alunosAmaral_B', 'qtdAlunosAmaral_B');
+
+    
+    </script>
 </body>
 </html> 
